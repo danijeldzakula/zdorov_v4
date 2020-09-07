@@ -224,7 +224,7 @@
                     <div class="circle circle-4"></div>
                 </div>
             </div>
-            <div class="block block9">
+            <div class="block block9" data-slide="6">
                 <div class="limit">
                     <div class="doc_cont">
                         <h2>Rezultat:</h2>
@@ -262,16 +262,14 @@
                                 <li>Obnavlja zglobove i tkiva</li>
                                 <li>Ublažava bol i oticanje</li>
                             </ul>
-                            <img src="img/prod.png" alt="">
+                            <img src="img/artikulax.png" alt="artikulax">
                         </div>
                         <form action="" method="post">
-<<<<<<< HEAD
+
                             <p><b>Vaš poklon: </b> kupon za popust od <b class="js_new_price_curs"> 3680RSD</b></p>
                             <p>Cena sa popustom: <span class="new_price js_new_price_curs">3680RSD</span> <span class="old_price js_old_price_curs">7360RSD</span></p>
-=======
-                            <p><b>Ваш подарок:</b> купон на скидку <b class="js_new_price_curs">990 руб.</b></p>
-                            <p>Цена по акции: <span class="new_price js_new_price_curs">990 руб.</span> <span class="old_price js_old_price_curs">3300 руб.</span></p>
->>>>>>> e42e705b12e9b144f917580649a2364676499068
+
+
                             <select id="country" name="country" class="country">
                                 <option value="RS">Srbija</option>
                             </select>
@@ -310,11 +308,12 @@
             </div>
         </footer>           
  
-        <script src="./js/chekerab.js"></script>
+
         <div class="zd_usersinfo">
             <div class="toForm">
                 <div class="b3">
-                    <a class="icoEl_cart" href="#" onclick="event.preventDefault()">
+                    <!-- onclick="event.preventDefault()" -->
+                    <a class="icoEl_cart" href="#" data-slide="2">
                         <span class="us_info_text01">
                             <span>Poručite </span> odmah
                         </span>
@@ -330,20 +329,17 @@
 
         <script>
             function showVisitors() {
-                //  Функция выборки случайного числа
                 function getRandom(min, max) {
                     var res = Math.floor(Math.random() * (max - min + 1) + min);
                     return res;
                 }
 
-                //  Количество посетителей
                 var countPeoples = getRandom(130, 230);
                 var peoplesBlock = $('#peoples');
                 var min = countPeoples - 20;
                 var max = countPeoples + 20;
                 peoplesBlock.text(getRandom(min, max));
 
-                //  Показ кол-ва посетителей на сайте
                 setInterval(function () {
                     peoplesBlock.fadeOut(function () {
                         peoplesBlock.text(getRandom(min, max));

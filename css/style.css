@@ -557,10 +557,10 @@
   position: absolute;
 }
 .block9 .recommendation__wrap img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  max-width: 200px;
+    position: absolute;
+    top: -20px;
+    right: 40px;
+    max-width: 110px;
 }
 .block9 .recommendation form {
   border-top: 1px solid #e7e7e7;
@@ -868,8 +868,9 @@
     margin-bottom: 29px;
   }
   .block9 .limit .recommendation__wrap img {
-    top: -2px;
+    top: -26px;
     width: 225px;
+    max-width: 100px;
   }
   .block9 .limit .recommendation form {
     margin-top: 27px;
@@ -1087,8 +1088,10 @@
     padding-bottom: 41px;
   }
   .block9 .limit .recommendation__wrap img {
-    top: 167px;
+    top: 57px;
     width: 90px;
+    position: absolute;
+    max-width: 70px;
   }
   .block9 .limit .recommendation__wrap ul li {
     font-size: 14px;
